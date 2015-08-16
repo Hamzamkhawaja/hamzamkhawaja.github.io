@@ -371,3 +371,23 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
+
+
+
+
+    @font-face {
+    font-family: myFirstFont;
+    src: url(CenturyGothic.ttf);
+}
+
+
+.appfont{
+
+
+    font-family: myFirstFont;
+}
+
+
+
+
+
