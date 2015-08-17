@@ -147,7 +147,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/bk-eco.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -259,13 +259,16 @@ a:focus {
 
 .content-section {
     padding-top: 100px;
+     /*background: url(../img/bk-eco.jpg) no-repeat bottom center scroll;*/
+    background-color: transparent;
+
 }
 
 .download-section {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    background: url(../img/Wallpaper-min.png) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -282,7 +285,11 @@ a:focus {
 @media(min-width:767px) {
     .content-section {
         padding-top: 250px;
+        /* background: url(../img/bk-eco.jpg) no-repeat bottom center scroll;*/
+        background-color: transparent;
     }
+
+
 
     .download-section {
         padding: 100px 0;
@@ -391,3 +398,38 @@ body {
 
 
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: myFirstFont;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+/*.body{
+
+    background-image: url("img/Wallpaper-min.png");
+
+}*/
+
+
+.aboutMe{
+    background-image: url("img/bk-eco.jpg");
+}
+
+
+.about{
+    background: url(../img/bk-eco.jpg) no-repeat bottom center scroll;
+}
+
+.summitlogo {
+
+    max-width: 40%;
+    max-height: 40%;
+}
