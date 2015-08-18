@@ -161,7 +161,7 @@ a:focus {
 }
 
 .intro .intro-body .brand-heading {
-    font-size: 40px;
+    font-size: 65px;
 }
 
 .intro .intro-body .intro-text {
@@ -340,10 +340,17 @@ ul.banner-social-buttons {
         display: block;
         margin-bottom: 20px;
         padding: 0;
+
+
+
     }
 
     ul.banner-social-buttons li:last-child {
         margin-bottom: 0;
+    }
+
+    .bigName  {
+        font-size: 280%;
     }
 }
 
@@ -458,9 +465,9 @@ div.secondProject{
     -o-background-size: cover;
 }
 
- .second-download-section {
+/* .second-download-section {
         padding: 100px 0;
-    }
+    }*/
 
 
 .countySeal {
@@ -469,4 +476,11 @@ div.secondProject{
 
 .contactInfoSize{
     font-size: 200%;
+}
+
+
+@media(max-width:767px){
+
+   .bigName{font-size: 150px%;
+   } 
 }
