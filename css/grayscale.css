@@ -433,3 +433,40 @@ h6 {
     max-width: 40%;
     max-height: 40%;
 }
+
+.urbanShieldLogo{
+     max-width: 65%;
+    max-height: 65%;
+}
+
+div.secondProject{
+
+    background-color:blue;
+    background: blue;
+}
+
+
+.second-download-section {
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background: transparent;
+    background-color: #1D3060;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+ .second-download-section {
+        padding: 100px 0;
+    }
+
+
+.countySeal {
+    float: right;
+}    
+
+.contactInfoSize{
+    font-size: 200%;
+}
