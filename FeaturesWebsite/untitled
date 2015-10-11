@@ -1,0 +1,102 @@
+ <section class="no-padding " id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <!-- <img src="img/yosemiteLeaves.jpg" class="img-responsive" alt=""> -->
+                        <img src="img/floridaBeach.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded">
+                                    Miame, FL
+                                </div>
+                                <div class="project-name">
+                                    Sunset Wave
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <!-- <img src="img/yosemiteMantis.jpg" class="img-responsive" alt=""> -->
+                        <img src="img/beachWater.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Yosemite, CA
+                                </div>
+                                <div class="project-name">
+                                     Praying Mantis
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <!-- <img src="img/teaBush.jpg" class="img-responsive" alt=""> -->
+                        <img src="img/waterSunset.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Miami, FL
+                                </div>
+                                <div class="project-name">
+                                    Reflective Water
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <!-- <img src="img/floridaBeach.jpg" class="img-responsive" alt=""> -->
+                        <img src="img/yosemiteLeaves.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Yosemite, CA
+                                </div>
+                                <div class="project-name">
+                                    Pinewood Leaves
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <!-- <img src="img/beachWater.jpg" class="img-responsive" alt=""> -->
+                        <img src="img/yosemiteMantis.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Yosemite, CA
+                                </div>
+                                <div class="project-name">
+                                    Praying Mantis
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <!-- <img src="img/waterSunset.jpg" class="img-responsive" alt=""> -->
+                        <img src="img/teaBush.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Union City, CA
+                                </div>
+                                <div class="project-name">
+                                    Camelia Sinensis
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
