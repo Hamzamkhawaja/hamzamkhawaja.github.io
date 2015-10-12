@@ -272,6 +272,22 @@ a:focus {
 
 }
 
+.logan-download-section{
+
+width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background: url(../img/LoganPic.jpg) no-repeat center center scroll;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/LoganPic.jpg);
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+
+}
+
 .download-section {
     width: 100%;
     padding: 50px 0;
@@ -437,7 +453,32 @@ body {
 }
 
 
+.roboto{
 
+    font-family: 'Roboto', sans-serif;
+    
+    font-weight: 300;
+}
+
+.thinRoboto{ font-family: 'Roboto', sans-serif;
+    font-size: 390%;
+    font-weight: 100;
+
+}
+
+.regularSizedThinRoboto{ font-family: 'Roboto', sans-serif;
+    font-size: 200%;
+    font-weight: 100;
+
+}
+
+.headingRoboto {
+
+font-family: 'Roboto', sans-serif;
+    font-size: 850%;
+    font-weight: 100;
+
+}
 
 
 h1,
@@ -523,6 +564,6 @@ div.secondProject{
 
 @media(max-width:767px){
 
-   .bigName{font-size: 150px%;
+   .headingRoboto{font-size: 550%;
    } 
 }
