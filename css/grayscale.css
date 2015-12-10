@@ -288,6 +288,23 @@ width: 100%;
 
 }
 
+.compsciClub-download-section{
+
+width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background: url(../img/binary5.jpg) no-repeat center center scroll;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/binary5.jpg);
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+
+}
+
+
 .download-section {
     width: 100%;
     padding: 50px 0;
@@ -337,7 +354,7 @@ width: 100%;
     }
 }
 
-.btn {
+/*.btn {
     border-radius: 0;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -345,16 +362,50 @@ width: 100%;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+}*/
+
+
+
+.btn {
+    border: 1;
+    border: 2px solid #ffffff;
+    border-radius: 300px;
+    text-transform: lowercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: transparent;
+    color: #ffffff;
+    text-transform: none;
+
 }
 
-.btn-default {
+.btn-lg{
+
+    padding: 10px 20px;
+}
+
+/*.btn-default {
     border: 1px solid #42dca3;
     color: #42dca3;
     background-color: transparent;
 }
+*/
+
+/*.btn-default {
+    border-color: #fff;
+    color: #222;
+    background-color: #fff;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    background-color: transparent;
+}*/
+
+
+
 
 .US-btn-default {
-    border: 1px solid #FEB82E;
+    border: 2px solid #FEB82E;
     color: #FEB82E;
     background-color: transparent;
 }
@@ -362,7 +413,7 @@ width: 100%;
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #42dca3;
+    border: 2px solid #42dca3;
     outline: 0;
     color: #000;
     background-color: #42dca3;
@@ -370,7 +421,7 @@ width: 100%;
 
 .US-btn-default:hover,
 .US-btn-default:focus {
-    border: 1px solid #FEB82E;
+    border: 2px solid #FEB82E;
     outline: 0;
     color: #000;
     background-color: #FEB82E;
@@ -463,6 +514,15 @@ body {
 .thinRoboto{ font-family: 'Roboto', sans-serif;
     font-size: 390%;
     font-weight: 100;
+
+}
+
+.letsTalkRoboto {
+font-family: 'Roboto', sans-serif;
+    font-size: 480%;
+    font-weight: 100;
+text-transform: initial;
+
 
 }
 
