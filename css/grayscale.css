@@ -310,6 +310,20 @@ width: 100%;
 }
 
 
+.berk-download-section {
+    width: 100%;
+    padding: 50px 0;
+    color: #ffffff;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/CalSunset.jpg);
+    /*background: url(../img/saturatedBerkSunset.jpg) no-repeat center center scroll;
+*/    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
 .download-section {
     width: 100%;
     padding: 50px 0;
@@ -407,6 +421,50 @@ width: 100%;
 }*/
 
 
+
+.snapchat-btn-default {
+    border: 2px solid #000000;
+    color: #000000;
+    background-color: transparent;
+}
+
+.snapchat-btn-default:hover,
+.snapchat-btn-default:focus {
+    border: 2px solid #000000;
+    outline: 0;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+
+.cal-btn-default {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.cal-btn-default:hover,
+.cal-btn-default:focus {
+    border: 2px solid #1d3060;
+    outline: 0;
+    color: #ffffff;
+    background-color: #1d3060;
+}
+
+
+.Summit-btn-default {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.Summit-btn-default:hover,
+.Summit-btn-default:focus {
+    border: 2px solid #b83539;
+    outline: 0;
+    color: #ffffff;
+    background-color: #b83539;
+}
 
 
 .US-btn-default {
@@ -531,9 +589,18 @@ text-transform: initial;
 
 }
 
-.regularSizedThinRoboto{ font-family: 'Roboto', sans-serif;
+.regularSizedThinRoboto{ 
+    font-family: 'Roboto', sans-serif;
     font-size: 200%;
     font-weight: 100;
+
+}
+
+.regularSizedThinRobotoSnapchat {
+font-family: 'Roboto', sans-serif;
+    font-size: 200%;
+    font-weight: 100;
+
 
 }
 
@@ -603,10 +670,29 @@ h6 {
     max-height: 40%;
 }
 
+.linkedInLogo {
+
+    max-width: 5%;
+    max-height: 5%;
+}
+
+.berkLogo {
+
+    max-width: 30%;
+    max-height: 30%;
+}
+
 .urbanShieldLogo{
      max-width: 85%;
     max-height: 85%;
 }
+
+
+.snapchatLogo{
+     max-width: 25%;
+    max-height: 25%;
+}
+
 
 .XcodeLogo{
      max-width: 85%;
@@ -620,7 +706,24 @@ div.secondProject{
     background: blue;
 }
 
+div.snapchatProject{
 
+    background-color:yellow;
+    background: yellow;
+}
+
+
+.snapchat-download-section {
+    width: 100%;
+    padding: 50px 0;
+    color: #000000;
+    background: transparent;
+    background-color: #fffc00;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
 
 .second-download-section {
     width: 100%;
