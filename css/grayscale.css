@@ -10,6 +10,10 @@ body {
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
     background-color: #000000;
+    background: url(../img/blackBG.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: fixed;
+
 }
 
 body>section {
@@ -156,9 +160,9 @@ a:focus {
     /*background: url(../img/bk-eco.jpg) no-repeat bottom center scroll;
 */
 
-   background: url(../img/blackBG.jpg) no-repeat bottom center scroll;
-
- background-color: #000;
+   /*background: url(../img/blackBG.jpg) no-repeat bottom center scroll;
+*/
+ background-color: transparent;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
