@@ -11,9 +11,9 @@ body {
     color: #fff;
     background-color: #000000;
 
-    /*background: url(../img/blackBG.jpg) no-repeat fixed;
+    background: url(../img/blackBG.jpg) no-repeat fixed;
     background-size: 100% auto;
-    background-position: fixed;*/
+    background-position: fixed;
 
 }
 
@@ -162,9 +162,11 @@ a:focus {
     /*background: url(../img/bk-eco.jpg) no-repeat bottom center scroll;
 */
 
-   background: url(../img/blackBG.jpg) no-repeat bottom center scroll;
 
- background-color: #000;
+/*
+   background: url(../img/blackBG.jpg) no-repeat bottom center scroll;
+*/
+ background-color: transparent;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
