@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- 
+Next Steps: change toggle size, understand toggle, add ord (num) list of companies, persist toggle, bootstrap with columns
+
+- add top-right "Apply" hide/show toggle, toggle can be a switch (youtube.com/watch?v=6HWaZIfUZVg)
+- add email subscribe field
+- test images instead of names
+- knob instead of email button
+- add "hide section until further notice" with black button or gradient color 
+- add section names, put SWE and APM first, then ML and startups next
+- add email collection field for subscribing to when an internship opens up
+- add made by Hamza on the bottom
+- make full spreadsheet
+- put popup overlay model (blurred) for when someone accesses site on mobile
+- add images for companies instead of names
+- ask Imran to make the ranks logo (similar to index: _-)
+- find a way to do data collection 
+- parallelize a bunch of S3 buckets on AWS, ask Majeed and Baba for guidance beforehand
+- Have Zuhayeer do a run-through of the site
+- get homies (and all active PM's) ready to post for launch
+- Launch: Post on LinkedIn, Anant's Slack channel, Jumpstart communities
+- reach out to Jumpstart for partnership
+
+ -->
+
+
+
+
+<!-- 
+Toggle Switch Resource:
+https://www.w3schools.com/howto/howto_css_switch.asp 
+-->
+
+<!-- Local Storage Resource:
+https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-reload/
+ -->
+
+
+<head>
+  <link href="button.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+</head>
+
+
+<body>
+
+
+
+
+  <div class="container" style="padding-top: 2%">
+    <div style="float: right">
+      <!-- <button class="btn btn-primary" id="toggle_button">Apply</button> -->
+      <label class="switch">
+        <input type="checkbox" id="toggle_button">
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </div>
+
+
+<div class="container-fluid" id="checkbox-container">
+  
+
+
+
+<div id="rankings">
+  
+
+  <div class="row title">
+    <center>
+      <div>Ranks.fyi</div>
+    </center>
+  </div>
+
+
+
+  <div class="container-fluid description row" style="padding-bottom: 2%">
+    <div class="col-md-4 col-md-offset-4">
+
+      <ul>
+        <li class="bullet_padding">
+          Rankings are determined by 5 factors and our breakdown is crowdsourced 
+
+              <a href="https://docs.google.com/spreadsheets/d/1nOoskKGc7kZ44amvjVvr1hwLLJ37M517z_eIkzHkOZo/edit?usp=sharing" target="_blank">here</a>.
+        </li>
+        <li class="bullet_padding">
+          Open applications are <span class="green_under">underlined</span>. 
+        </li>
+        <li>
+
+          Toggle 
+          <label class="small_switch">
+            <input type="checkbox" id="">
+            <span class="small_slider round"></span>
+          </label>
+
+          to keep track of which programs you’ve applied to— don’t clear your cache and your data will stay!
+
+        </li>
+      </ul>
+
+
+    </div>
+
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <h3>
+        SWE <sub><div class="footnote">software engineering</div></sub>
+      </h3>
+    </div>
+  </div>
+
+
+
+
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Rank</th>
+            <th scope="col">Company</th>
+            <th scope="col">Spots</th>
+            <th scope="col">Rounds</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td><a href="https://careers.google.com/jobs/results/75841506784486086-software-engineer-university-graduate/?utm_campaign=google_jobs_apply&utm_medium=organic&utm_source=google_jobs_apply"><img src="google.jpg" style="max-width: 10%;" class="green_under"></a></td>
+            <td>2000</td>
+            <td>3</td>s
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td><img src="fb.png" style="max-width: 10%"></td>
+            <td>600</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td><img src="apple.png" style="max-width: 9%"></td>
+            <td>800</td>
+            <td>3</td>
+
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <h3>
+        APM <sub><div class="footnote">associate product manager</div></sub>
+      </h3>
+    </div>
+  </div>
+
+
+
+
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Rank</th>
+            <th scope="col">Company</th>
+            <th scope="col">Spots</th>
+            <th scope="col">Rounds</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Google</td>
+            <td>44</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Salesforce</td>
+            <td>12</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>LinkedIn</td>
+            <td>7</td>
+            <td>3</td>
+
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+</div>
+<!-- End of id='rankings' page -->
+
+
+
+<div id="apply">
+  
+
+
+  <div class="row title">
+    <center>
+      <div>Tracker</div>
+    </center>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <h3>
+        SWE <sub><div class="footnote">software engineering</div></sub>
+      </h3>
+    </div>
+  </div>
+
+
+
+
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Rank</th>
+            <th scope="col">Company</th>
+            <th scope="col">Applied</th>
+            <th scope="col">Reply</th>
+            <th scope="col">Interview</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td><img src="google.jpg" style="max-width: 30%"></td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="11">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="12">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="13">
+                <span class="slider round"></span>
+              </label>          </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td><img src="fb.png" style="max-width: 30%"></td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="21">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="22">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="23">
+                <span class="slider round"></span>
+              </label>
+            </td>
+
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td><img src="apple.png" style="max-width: 27%"></td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="31">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="32">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="33">
+                <span class="slider round"></span>
+              </label>
+            </td>
+
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col-md-2 col-md-offset-1">
+         <form>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Sign up if you want to be notified when the application opens.</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+    </form>
+    <div class='btn btn-default'>Subscribe</div>
+    </div>
+
+
+
+  </div>
+
+
+
+    <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <h3>
+        APM <sub><div class="footnote">associate product manager</div></sub>
+      </h3>
+  </div>
+
+
+  </div>
+    <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Rank</th>
+            <th scope="col">Company</th>
+            <th scope="col">Applied</th>
+            <th scope="col">Reply</th>
+            <th scope="col">Interview</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Google</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="41">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="42">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="43">
+                <span class="slider round"></span>
+              </label>          </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Facebook</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="51">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="52">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="53">
+                <span class="slider round"></span>
+              </label>
+            </td>
+
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Apple</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="61">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="62">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="63">
+                <span class="slider round"></span>
+              </label>
+            </td>
+
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col-md-2 col-md-offset-1">
+         <form>
+      <div class="form-group">
+        <label for="exampleFormControlInput1"></label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+    </form>
+    <div class='btn btn-default'>Subscribe</div>
+    </div>
+
+  </div>
+
+
+
+
+  </div>
+
+
+
+</div>
+
+
+<script type="text/javascript">
+ var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {},
+    $checkboxes = $("#checkbox-container :checkbox");
+
+$checkboxes.on("change", function(){
+  $checkboxes.each(function(){
+    checkboxValues[this.id] = this.checked;
+  });
+  
+  localStorage.setItem("checkboxValues", JSON.stringify(checkboxValues));
+});
+
+// On page load
+$.each(checkboxValues, function(key, value) {
+  $("#" + key).prop('checked', value);
+});
+
+
+  
+  // to hide and show apply/ranks upon toggle
+  $(document).ready(function() {
+    $("#toggle_button").click( function(){
+      $("#apply").toggle(300);
+    });
+  });
+
+
+  $(document).ready(function() {
+    $("#toggle_button").click( function(){
+      $("#rankings").toggle(300);
+    });
+  });
+
+  // make every link open in a new tab
+  jQuery(document.links)   .filter(function() {
+    return this.hostname != window.location.hostname;   })     .attr('target', '_blank');
+
+
+</script>
+
+
+
+
+</body>
+</html> 
+
+
+
+
