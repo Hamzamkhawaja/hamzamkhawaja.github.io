@@ -12,6 +12,20 @@
 }
 */
 
+.rankings_bottom_padding {
+  padding-bottom: 5%;
+}
+
+.collapse_icon {
+  max-width: 20%;
+  margin-top: 20% !important;
+
+}
+
+
+
+
+
 @media only screen and (max-width: 600px) {
   body {
     background: linear-gradient(90deg,#fce3ec,#ffe8cc) !important;
@@ -89,7 +103,7 @@ a:hover {
 .title_footnote {
   font-family: avenir !important;
   color: #C8C8C8;
-  font-size: 60%;
+  font-size: 55%;
   padding-bottom: 5%;
 }
 
