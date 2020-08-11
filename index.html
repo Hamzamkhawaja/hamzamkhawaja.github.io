@@ -42,6 +42,17 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
 
 
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175167991-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-175167991-1');
+	</script>
+
+
   <link href="button.css" rel="stylesheet"/>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
   <link rel="icon" href="ranks_logo.png">
@@ -83,7 +94,6 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
   	<center>
       <div>Ranks.fyi <sub><div class="title_footnote">powered by <a href="https://levels.fyi">Levels.fyi</a></div></sub></div>
     </center>
-
   	</div>
   </div>
 
@@ -131,7 +141,7 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
 	
     </div>
     <div class="col-md-1">
-    	<input class="switch collapse_icon" type="checkbox" id="100" value="off" data-target="#swe" data-toggle="collapse">
+    	<input class="switch collapse_icon" type="checkbox" id="100" data-target="#swe" data-toggle="collapse">
 
 <!--               <label class="switch">
                 <input type="checkbox" id="98">
@@ -142,7 +152,7 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
     </div>
   </div>
 
-  <div id="swe" class="row collapse">
+  <div id="swe" class="row collapse in">
     <div class="col-md-4 col-md-offset-4">
       <table class="table">
         <thead>
