@@ -99,7 +99,7 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
 
 
 
-  <div class="container-fluid description row" style="padding-bottom: 2%" id="large_devices">
+  <div class="container-fluid description row" style="padding-bottom: 2%" >
     <div class="col-md-4 col-md-offset-4">
 
       <ul>
@@ -109,7 +109,7 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
               <a href="https://docs.google.com/spreadsheets/d/1nOoskKGc7kZ44amvjVvr1hwLLJ37M517z_eIkzHkOZo/edit?usp=sharing" target="_blank">here</a>.
         </li>
         <li class="bullet_padding">
-          Open applications are <span class="green_under"> linked and underlined</span>. 
+          Starred<b>*</b> if New Grad only. Released applications are <a href=" "><span class="green_under"> linked</span></a>.
         </li>
         <li>
 
@@ -119,7 +119,7 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
             <span class="small_slider round"></span>
           </label>
 
-          (top right) to keep track of which programs you’ve applied to— don’t clear your cache and your data will stay!
+          (top right) to keep track of which programs you’ve applied to— don’t clear your cookies and your data will stay!
 
         </li>
       </ul>
@@ -133,26 +133,23 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
 
 
   <div class="row">
-    <div class="col-md-2 col-md-offset-4">
-	      <h3>
-	        SWE <sub><div class="footnote">software engineering</div></sub>
-	      </h3>
-
-	
-    </div>
-    <div class="col-md-1">
-    	<input class="switch collapse_icon" type="checkbox" id="100" data-target="#swe" data-toggle="collapse">
-
-<!--               <label class="switch">
-                <input type="checkbox" id="98">
-                <span class="slider round"></span>
-              </label>
-    	<a href="#swe" data-toggle="collapse" class="swtich" type="checkbox" id="97"><img src="images/collapse_right.png" class="collapse_icon"> </a> -->
+    <div class="col-md-3 col-md-offset-4">
+    	<div class="col-md-8">
+		 	<h3>
+        		SWE <sub><div class="footnote">software engineering</div></sub>
+      		</h3>
+    	</div>
+    	<div class="col-md-2">
+    			     
+      	<a data-toggle="collapse" data-target="#swe" aria-expanded="false">
+  			<div class="expand_caret caret"></div>
+		</a>
+    	</div>
 
     </div>
   </div>
 
-  <div id="swe" class="row collapse in">
+  <div id="swe" class="row collapse">
     <div class="col-md-4 col-md-offset-4">
       <table class="table">
         <thead>
@@ -185,73 +182,73 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
         	</tr>
           <tr>
             <th scope="row">4</th>
-            <td>Amazon</td>
+            <td>Uber</td>
             <td>2000</td>
             <td>4</td>
           </tr>
           <tr>
             <th scope="row">5</th>
-            <td>Linkedin</td>
+            <td>Lyft</td>
             <td>40</td>
             <td>3</td>
           </tr>
           <tr>
             <th scope="row">6</th>
-            <td>Salesforce</td>
+            <td>Tesla</td>
             <td>200</td>
             <td>3</td>
         </tr>
           <tr>
             <th scope="row">7</th>
-            <td>Stripe</td>
+            <td>Robinhood</td>
             <td>44</td>
             <td>4</td>
           </tr>
           <tr>
             <th scope="row">8</th>
-            <td>Lyft</td>
+            <td>Amazon</td>
             <td>12</td>
             <td>3</td>
           </tr>
           <tr>
             <th scope="row">9</th>
-            <td>Snap</td>
+            <td>Microsoft</td>
             <td>7</td>
             <td>3</td>
         </tr>
           <tr>
             <th scope="row">10</th>
-            <td>Nuro</td>
+            <td>Palantir</td>
             <td>44</td>
             <td>4</td>
           </tr>
           <tr>
             <th scope="row">11</th>
-            <td>Microsoft</td>
+            <td>Bloomberg</td>
             <td>12</td>
             <td>3</td>
           </tr>
           <tr>
             <th scope="row">12</th>
-            <td>Workday</td>
+            <td>LinkedIn</td>
             <td>7</td>
             <td>3</td>
         </tr>
           <tr>
             <th scope="row">13</th>
-            <td>Atlassian</td>
+            <td>Quora</td>
             <td>44</td>
             <td>4</td>
           </tr>
           <tr>
             <th scope="row">14</th>
-            <td>NVIDIA</td>
+            <td>Stripe</td>
             <td>12</td>
             <td>3</td>
           </tr>
           <tr>
             <th scope="row">15</th>
-            <td>Uber</td>
+            <td>Slack</td>
             <td>7</td>
             <td>3</td>
         </tr>
@@ -273,11 +270,11 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
       </h3>
     </div>
     <div class="col-md-1">
-    	<input class="switch collapse_icon" type="checkbox" id="101" value="off" data-target="#apm" data-toggle="collapse">
+    	<input checked class="switch collapse_icon" type="checkbox" id="101" data-target="#apm" data-toggle="collapse">
     </div>
   </div>
 
-  <div id="apm" class="row collapse">
+  <div id="apm" class="row collapse in">
     <div class="col-md-4 col-md-offset-4">
       <table class="table">
         <thead>
@@ -298,7 +295,11 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td>Salesforce</td>
+            <td>
+            	<a class="green_under" href="https://www.linkedin.com/jobs/view/associate-product-manager-apm-new-grad-at-salesforce-1940173463/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic">
+            	Salesforce
+            	</a>
+        	</td>
             <td>12</td>
             <td>3</td>
           </tr>
@@ -310,7 +311,13 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
           </tr>
           <tr>
             <th scope="row">4</th>
-            <td>Facebook</td>
+            <td>
+            	<a class="green_under" href="http://www.fbrpms.com/apply">
+            	Facebook*
+            	</a>
+
+
+            </td>
             <td>44</td>
             <td>4</td>
           </tr>
@@ -322,31 +329,31 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
           </tr>
           <tr>
             <th scope="row">6</th>
-            <td>Uber</td>
+            <td>Uber*</td>
             <td>7</td>
             <td>3</td>
           </tr>
           <tr>
             <th scope="row">7</th>
-            <td>Lyft</td>
+            <td>Lyft*</td>
             <td>44</td>
             <td>4</td>
           </tr>
           <tr>
             <th scope="row">8</th>
-            <td>Yahoo</td>
+            <td>Yahoo/Oath</td>
             <td>12</td>
             <td>3</td>
           </tr>
           <tr>
             <th scope="row">9</th>
-            <td>Atlassian</td>
+            <td>Atlassian*</td>
             <td>7</td>
             <td>3</td>
           </tr>
           <tr>
             <th scope="row">10</th>
-            <td>Dropbox</td>
+            <td>Dropbox*</td>
             <td>44</td>
             <td>4</td>
           </tr>
@@ -579,58 +586,6 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
 
 
 
-  <div class="row">
-    <div class="col-md-2 col-md-offset-4">
-      <h3>
-        Img test <sub><div class="footnote">software engineering</div></sub>
-      </h3>
-    </div>
-   <div class="col-md-1">
-    	<input class="switch collapse_icon" type="checkbox" id="104" value="off" data-target="#imgtest" data-toggle="collapse">
-    </div>
-  </div>
-
-  <div id="imgtest" class="row collapse">
-    <div class="col-md-4 col-md-offset-4">
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Rank</th>
-            <th scope="col">Company</th>
-            <th scope="col">Spots</th>
-            <th scope="col">Rounds</th>
-
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td><a href="https://careers.google.com/jobs/results/75841506784486086-software-engineer-university-graduate/?utm_campaign=google_jobs_apply&utm_medium=organic&utm_source=google_jobs_apply"><img src="images/google.jpg" style="max-width: 10%;" class="green_under"></a></td>
-            <td>2000</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td><img src="images/fb.png" style="max-width: 10%"></td>
-            <td>600</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td><img src="images/apple.png" style="max-width: 9%"></td>
-            <td>800</td>
-            <td>3</td>
-
-
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-<div class="rankings_bottom_padding"></div>
-
-
 </div>
 <!-- End of id='rankings' page -->
 
@@ -654,9 +609,6 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
     </div>
   </div>
 
-
-
-
   <div class="row">
     <div class="col-md-4 col-md-offset-4">
       <table class="table">
@@ -670,49 +622,49 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
 
           </tr>
         </thead>
+
         <tbody>
           <tr>
             <th scope="row">1</th>
-            <!-- <td><img src="images/google.jpg" style="max-width: 25%"></td>  -->
             <td>Google</td>
             <td>
               <label class="switch">
-                <input type="checkbox" id="11">
+                <input type="checkbox" id="swe1">
                 <span class="slider round"></span>
               </label>
 
             </td>
             <td>
               <label class="switch">
-                <input type="checkbox" id="12">
+                <input type="checkbox" id="swe2">
                 <span class="slider round"></span>
               </label>
             </td>
             <td>
               <label class="switch">
-                <input type="checkbox" id="13">
+                <input type="checkbox" id="swe3">
                 <span class="slider round"></span>
-              </label>          </td>
+              </label>
+          	</td>
           </tr>
           <tr>
             <th scope="row">2</th>
-            <!-- <td><img src="images/fb.png" style="max-width: 25%"></td>  -->
             <td>Facebook</td>
             <td>
               <label class="switch">
-                <input type="checkbox" id="21">
+                <input type="checkbox" id="swe4">
                 <span class="slider round"></span>
               </label>
             </td>
             <td>
               <label class="switch">
-                <input type="checkbox" id="22">
+                <input type="checkbox" id="swe5">
                 <span class="slider round"></span>
               </label>
             </td>
             <td>
               <label class="switch">
-                <input type="checkbox" id="23">
+                <input type="checkbox" id="swe6">
                 <span class="slider round"></span>
               </label>
             </td>
@@ -720,111 +672,377 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
           </tr>
           <tr>
             <th scope="row">3</th>
+            <td>Apple</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe7">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe8">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe9">
+                <span class="slider round"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Google</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe10">
+                <span class="slider round"></span>
+              </label>
+
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe11">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe12">
+                <span class="slider round"></span>
+              </label>          </td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Facebook</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe13">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe14">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe15">
+                <span class="slider round"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Apple</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe16">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe17">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe18">
+                <span class="slider round"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Google</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe19">
+                <span class="slider round"></span>
+              </label>
+
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe20">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe21">
+                <span class="slider round"></span>
+              </label>          </td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Facebook</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe22">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe23">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe24">
+                <span class="slider round"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Apple</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe25">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe26">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe27">
+                <span class="slider round"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Google</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe28">
+                <span class="slider round"></span>
+              </label>
+
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe29">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe30">
+                <span class="slider round"></span>
+              </label>          </td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Facebook</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe31">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe32">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe33">
+                <span class="slider round"></span>
+              </label>
+            </td>
+
+          </tr>
+          <tr>
+            <th scope="row">12</th>
             <!-- <td><img src="images/apple.png" style="max-width: 22%"></td>  -->
             <td>Apple</td>
             <td>
               <label class="switch">
-                <input type="checkbox" id="31">
+                <input type="checkbox" id="swe34">
                 <span class="slider round"></span>
               </label>
             </td>
             <td>
               <label class="switch">
-                <input type="checkbox" id="32">
+                <input type="checkbox" id="swe35">
                 <span class="slider round"></span>
               </label>
             </td>
             <td>
               <label class="switch">
-                <input type="checkbox" id="33">
+                <input type="checkbox" id="swe36">
                 <span class="slider round"></span>
               </label>
             </td>
+          </tr>
+          <tr>
+            <th scope="row">13</th>
+            <td>Google</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe37">
+                <span class="slider round"></span>
+              </label>
 
-
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe38">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe39">
+                <span class="slider round"></span>
+              </label>          </td>
+          </tr>
+          <tr>
+            <th scope="row">14</th>
+            <td>Facebook</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe40">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe41">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe42">
+                <span class="slider round"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">15</th>
+            <!-- <td><img src="images/apple.png" style="max-width: 22%"></td>  -->
+            <td>Apple</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe43">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe44">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="swe45">
+                <span class="slider round"></span>
+              </label>
+            </td>
           </tr>
         </tbody>
       </table>
     </div>
 
     <div class="col-md-2 col-md-offset-1">
-         <form>
-      <div class="form-group">
-        <label for="exampleFormControlInput1">Sign up if you want to be notified when the application opens.</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-    </form>
-    <div class='btn btn-default'>Subscribe</div>
+     	<form>
+	      <div class="form-group">
+	        <label for="exampleFormControlInput1">Sign up if you want to be notified when the application opens.</label>
+	        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+	      </div>
+    	</form>
+    	<div class='btn btn-default'>Subscribe</div>
     </div>
 
-
-
   </div>
+
+
 
 
 
     <div class="row">
-    <div class="col-md-4 col-md-offset-4">
-      <h3>
-        APM <sub><div class="footnote">associate product manager</div></sub>
-      </h3>
-  </div>
+	    <div class="col-md-4 col-md-offset-4">
+	      <h3>
+	        APM <sub><div class="footnote">associate product manager</div></sub>
+	      </h3>
+	  	</div>
+  	</div>
 
-
-  </div>
     <div class="row">
-    <div class="col-md-4 col-md-offset-4">
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Rank</th>
-            <th scope="col">Company</th>
-            <th scope="col">Applied</th>
-            <th scope="col">Reply</th>
-            <th scope="col">Interview</th>
+    	<div class="col-md-4 col-md-offset-4">
+			<table class="table">
+			<thead>
+			  <tr>
+			    <th scope="col">Rank</th>
+			    <th scope="col">Company</th>
+			    <th scope="col">Applied</th>
+			    <th scope="col">Reply</th>
+			    <th scope="col">Interview</th>
+			  </tr>
+			</thead>
 
-          </tr>
-        </thead>
+       
         <tbody>
           <tr>
             <th scope="row">1</th>
             <td>Google</td>
             <td>
               <label class="switch">
-                <input type="checkbox" id="41">
+                <input type="checkbox" id="apm1">
+                <span class="slider round"></span>
+              </label>
+
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm2">
                 <span class="slider round"></span>
               </label>
             </td>
             <td>
               <label class="switch">
-                <input type="checkbox" id="42">
+                <input type="checkbox" id="apm3">
                 <span class="slider round"></span>
               </label>
-            </td>
-            <td>
-              <label class="switch">
-                <input type="checkbox" id="43">
-                <span class="slider round"></span>
-              </label>          </td>
+          	</td>
           </tr>
           <tr>
             <th scope="row">2</th>
             <td>Facebook</td>
             <td>
               <label class="switch">
-                <input type="checkbox" id="51">
+                <input type="checkbox" id="apm4">
                 <span class="slider round"></span>
               </label>
             </td>
             <td>
               <label class="switch">
-                <input type="checkbox" id="52">
+                <input type="checkbox" id="apm5">
                 <span class="slider round"></span>
               </label>
             </td>
             <td>
               <label class="switch">
-                <input type="checkbox" id="53">
+                <input type="checkbox" id="apm6">
                 <span class="slider round"></span>
               </label>
             </td>
@@ -835,49 +1053,853 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
             <td>Apple</td>
             <td>
               <label class="switch">
-                <input type="checkbox" id="61">
+                <input type="checkbox" id="apm7">
                 <span class="slider round"></span>
               </label>
             </td>
             <td>
               <label class="switch">
-                <input type="checkbox" id="62">
+                <input type="checkbox" id="apm8">
                 <span class="slider round"></span>
               </label>
             </td>
             <td>
               <label class="switch">
-                <input type="checkbox" id="63">
+                <input type="checkbox" id="apm9">
                 <span class="slider round"></span>
               </label>
             </td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Google</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm10">
+                <span class="slider round"></span>
+              </label>
 
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm11">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm12">
+                <span class="slider round"></span>
+              </label>          </td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Facebook</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm13">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm14">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm15">
+                <span class="slider round"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Apple</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm16">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm17">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm18">
+                <span class="slider round"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Google</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm19">
+                <span class="slider round"></span>
+              </label>
+
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm20">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm21">
+                <span class="slider round"></span>
+              </label>          </td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Facebook</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm22">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm23">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm24">
+                <span class="slider round"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Apple</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm25">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm26">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm27">
+                <span class="slider round"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Google</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm28">
+                <span class="slider round"></span>
+              </label>
+
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm29">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm30">
+                <span class="slider round"></span>
+              </label>          </td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Facebook</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm31">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm32">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm33">
+                <span class="slider round"></span>
+              </label>
+            </td>
 
           </tr>
+          <tr>
+            <th scope="row">12</th>
+            <td>Apple</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm34">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm35">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm36">
+                <span class="slider round"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">13</th>
+            <td>Google</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm37">
+                <span class="slider round"></span>
+              </label>
+
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm38">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm39">
+                <span class="slider round"></span>
+              </label>          </td>
+          </tr>
+          <tr>
+            <th scope="row">14</th>
+            <td>Facebook</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm40">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm41">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm42">
+                <span class="slider round"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">15</th>
+            <!-- <td><img src="images/apple.png" style="max-width: 22%"></td>  -->
+            <td>Apple</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm43">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm44">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="apm45">
+                <span class="slider round"></span>
+              </label>
+            </td>
+          </tr>
         </tbody>
-      </table>
-    </div>
 
-    <div class="col-md-2 col-md-offset-1">
-         <form>
-      <div class="form-group">
-        <label for="exampleFormControlInput1"></label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-    </form>
-    <div class='btn btn-default'>Subscribe</div>
-    </div>
+
+		</table>
+
+    	</div> <!-- apm done  -->
+
+
+
+	    <div class="col-md-2 col-md-offset-1">
+	    	<form>
+		      <div class="form-group">
+		        <label for="exampleFormControlInput1"></label>
+		        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+		      </div>
+	    	</form>
+	    	<div class='btn btn-default'>Subscribe</div>
+	    </div>
+
+  	</div>
+
+
+
+
+
+    <div class="row">
+	    <div class="col-md-4 col-md-offset-4">
+	      <h3>
+	        AI/ML <sub><div class="footnote">machine learning</div></sub>
+	      </h3>
+	  	</div>
+  	</div>
+
+    <div class="row">
+    	<div class="col-md-4 col-md-offset-4">
+			<table class="table">
+			<thead>
+			  <tr>
+			    <th scope="col">Rank</th>
+			    <th scope="col">Company</th>
+			    <th scope="col">Applied</th>
+			    <th scope="col">Reply</th>
+			    <th scope="col">Interview</th>
+			  </tr>
+			</thead>
+
+       
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Google</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai1">
+                <span class="slider round"></span>
+              </label>
+
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai2">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai3">
+                <span class="slider round"></span>
+              </label>
+          	</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Facebook</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai4">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai5">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai6">
+                <span class="slider round"></span>
+              </label>
+            </td>
+
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Apple</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai7">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai8">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai9">
+                <span class="slider round"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Google</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai10">
+                <span class="slider round"></span>
+              </label>
+
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai11">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai12">
+                <span class="slider round"></span>
+              </label>          </td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Facebook</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai13">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai14">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai15">
+                <span class="slider round"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Apple</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai16">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai17">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai18">
+                <span class="slider round"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Google</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai19">
+                <span class="slider round"></span>
+              </label>
+
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai20">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai21">
+                <span class="slider round"></span>
+              </label>          </td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Facebook</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai22">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai23">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai24">
+                <span class="slider round"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Apple</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai25">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai26">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai27">
+                <span class="slider round"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Google</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai28">
+                <span class="slider round"></span>
+              </label>
+
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai29">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="ai30">
+                <span class="slider round"></span>
+              </label>
+          	</td>
+          </tr>
+        </tbody>
+
+		</table>
+
+    	</div> <!-- apm done  -->
+
+	    <div class="col-md-2 col-md-offset-1">
+	    	<form>
+		      <div class="form-group">
+		        <label for="exampleFormControlInput1"></label>
+		        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+		      </div>
+	    	</form>
+	    	<div class='btn btn-default'>Subscribe</div>
+	    </div>
+
+  	</div>
+
+
+
+
+
+    <div class="row">
+	    <div class="col-md-4 col-md-offset-4">
+	      <h3>
+	        Startup PM <sub><div class="footnote">new grads only</div></sub>
+	      </h3>
+	  	</div>
+  	</div>
+
+    <div class="row">
+    	<div class="col-md-4 col-md-offset-4">
+			<table class="table">
+			<thead>
+			  <tr>
+			    <th scope="col">Rank</th>
+			    <th scope="col">Company</th>
+			    <th scope="col">Applied</th>
+			    <th scope="col">Reply</th>
+			    <th scope="col">Interview</th>
+			  </tr>
+			</thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Google</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp1">
+                <span class="slider round"></span>
+              </label>
+
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp2">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp3">
+                <span class="slider round"></span>
+              </label>
+          	</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Facebook</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp4">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp5">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp6">
+                <span class="slider round"></span>
+              </label>
+            </td>
+
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Apple</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp7">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp8">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp9">
+                <span class="slider round"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Google</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp10">
+                <span class="slider round"></span>
+              </label>
+
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp11">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp12">
+                <span class="slider round"></span>
+              </label>          </td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Facebook</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp13">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp14">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp15">
+                <span class="slider round"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Apple</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp16">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp17">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp18">
+                <span class="slider round"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Google</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp19">
+                <span class="slider round"></span>
+              </label>
+
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp20">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp21">
+                <span class="slider round"></span>
+              </label>          </td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Facebook</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp22">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp23">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp24">
+                <span class="slider round"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Apple</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp25">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp26">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp27">
+                <span class="slider round"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Google</td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp28">
+                <span class="slider round"></span>
+              </label>
+
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp29">
+                <span class="slider round"></span>
+              </label>
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="sp30">
+                <span class="slider round"></span>
+              </label>          </td>
+          </tr>
+          
+        </tbody>
+
+		</table>
+
+    	</div> <!-- apm done  -->
+
+	    <div class="col-md-2 col-md-offset-1">
+	    	<form>
+		      <div class="form-group">
+		        <label for="exampleFormControlInput1"></label>
+		        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+		      </div>
+	    	</form>
+	    	<div class='btn btn-default'>Subscribe</div>
+	    </div>
+
+  	</div>
+
 
   </div>
 
-
-
-
-  </div>
-
+  <!-- bottom padding, outside of id="apply" but within container: --> 
+  <div class="rankings_bottom_padding"></div>
 
 
 </div>
+
 
 
 <script type="text/javascript">
@@ -898,7 +1920,7 @@ $.each(checkboxValues, function(key, value) {
 });
 
 
-  
+ 
   // to hide and show apply/ranks upon toggle
   $(document).ready(function() {
     $("#toggle_button").click( function(){
@@ -906,32 +1928,59 @@ $.each(checkboxValues, function(key, value) {
     });
   });
 
-
   $(document).ready(function() {
     $("#toggle_button").click( function(){
       $("#rankings").toggle(300);
     });
   });
 
+
   // make every link open in a new tab
   jQuery(document.links)   .filter(function() {
     return this.hostname != window.location.hostname;   })     .attr('target', '_blank');
 
-var shown = []
 
-// On collapse
-shown.remove($(this).attr('id'));
-localStorage.setItem('shown', shown);
 
-// On open
-shown.push($(this).attr('id'));
-localStorage.setItem('shown', shown);
+ var shown = []
+ $('.collapse').on('hidden', function() {
+	// remove from localStorage
+	shown.remove($(this).attr('id'));
+	localStorage.setItem('shown', shown);
 
-// On page loads
-var shown = localStorage.getItem('shown');
+
+
+ }).on('shown', function() {
+       // add to localStorage
+	shown.push($(this).attr('id'));
+	localStorage.setItem('shown', shown);
+
+
+ });
+
+  $(document).ready(function(){
+  	var shown = localStorage.getItem('shown');
 for (var s in shown) {
     $('#' + s).show(); // Or whatever API you use to un-collapse the div
 }
+ 
+ });​
+
+ 
+
+
+// // On collapse
+// shown.remove($(this).attr('id'));
+// localStorage.setItem('shown', shown);
+
+// // On open
+// shown.push($(this).attr('id'));
+// localStorage.setItem('shown', shown);
+
+// // On page loads
+// var shown = localStorage.getItem('shown');
+// for (var s in shown) {
+//     $('#' + s).show(); // Or whatever API you use to un-collapse the div
+// }
 
 
 
