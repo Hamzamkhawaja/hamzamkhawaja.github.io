@@ -1941,46 +1941,33 @@ $.each(checkboxValues, function(key, value) {
 
 
 
- var shown = []
- $('.collapse').on('hidden', function() {
-	// remove from localStorage
-	shown.remove($(this).attr('id'));
-	localStorage.setItem('shown', shown);
+//  var shown = []
+//  $('.collapse').on('hidden', function() {
+// 	// remove from localStorage
+// 	shown.remove($(this).attr('swe'));
+// 	localStorage.setItem('shown', shown);
 
 
 
- }).on('shown', function() {
-       // add to localStorage
-	shown.push($(this).attr('id'));
-	localStorage.setItem('shown', shown);
+//  }).on('shown', function() {
+//        // add to localStorage
+// 	shown.push($(this).attr('swe'));
+// 	localStorage.setItem('shown', shown);
 
 
- });
+//  });
 
-  $(document).ready(function(){
-  	var shown = localStorage.getItem('shown');
-for (var s in shown) {
-    $('#' + s).show(); // Or whatever API you use to un-collapse the div
-}
- 
- });​
-
- 
-
-
-// // On collapse
-// shown.remove($(this).attr('id'));
-// localStorage.setItem('shown', shown);
-
-// // On open
-// shown.push($(this).attr('id'));
-// localStorage.setItem('shown', shown);
-
-// // On page loads
-// var shown = localStorage.getItem('shown');
+//   $(document).ready(function(){
+//   	var shown = localStorage.getItem('shown');
 // for (var s in shown) {
 //     $('#' + s).show(); // Or whatever API you use to un-collapse the div
 // }
+ 
+//  });​
+
+ 
+
+
 
 
 
