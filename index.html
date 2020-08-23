@@ -133,15 +133,22 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
 
 
   <div class="row">
-    <div class="col-md-3 col-md-offset-4">
-    	<div class="col-md-8">
-		 	<h3>
-        		SWE <sub><div class="footnote">software engineering</div></sub>
-      		</h3>
+    <div class="col-md-3 col-md-offset-4 col-xs-offset-0 col-xs-12">
+    	<div class="col-md-8 col-xs-6">
+    		<a data-toggle="collapse" data-target="#swe">
+			 	<h3>
+	        		SWE <sub><div class="footnote">software engineering</div></sub>
+	      		</h3>
+    		</a>
+
     	</div>
-    	<div class="col-md-2">
-    			     
-      	<a data-toggle="collapse" data-target="#swe" aria-expanded="false">
+    	<div class="col-md-2 col-xs-6">
+    			    
+      	<a class="collapse" id="firstCollapse" data-toggle="collapse" data-target="#swe" aria-expanded="false">
+  			<div class="expand_caret caret"></div>
+		</a>
+
+      	<a id="linkId" data-toggle="collapse" data-target="#swe" aria-expanded="false">
   			<div class="expand_caret caret"></div>
 		</a>
     	</div>
@@ -274,7 +281,7 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
     </div>
   </div>
 
-  <div id="apm" class="row collapse in">
+  <div id="apm" class="row collapse">
     <div class="col-md-4 col-md-offset-4">
       <table class="table">
         <thead>
@@ -1903,16 +1910,97 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
 
 
 <script type="text/javascript">
+
+
+    //  var openSectionsDict = JSON.parse(localStorage.getItem('openSectionsDict')) || {},
+    // $sections = $("#checkbox-container :swe");
+
+// $sections.on("change", function(){
+// 	$sections.each(function(){
+// 		openSectionsDict[this.id] = this.checked
+// 	});
+// 	localStorage.setItem("openSectionsDict", JSON.stringify(openSectionsDict));
+// });
+
+
+// // On page load
+// $.each(openSectionsDict, function(key, value) {
+//   $("#" + key).prop('checked', value);
+// });
+
+
+
+
+
+
+// function hideSwe() {
+// 	alert("hideSwe() was triggered on link click");
+// 	var element = document.getElementById("swe");
+//   	element.classList.toggle("hider");
+
+// }
+
+// $( "#linkId" ).click(function() {
+
+// });
+
+// $('#firstCollapse').collapse({
+// 	$("dialogue").dialogue();
+// 	alert("I hate this");
+// 	console.log("got to jquery collapse");
+
+// });
+
+$('#firstCollapse').on('hidden.bs.collapse', function () {
+  // do something…
+  alert("I got to the longer one");
+  console.log("I got here");
+});
+
+
+var to_show =JSON.parse(localStorage.getItem('to_show')) || [];
+
+
+	$(".collapse").on('show.bs.collapse', function(){
+		to_show.push(this.id);
+		localStorage.setItem("to_show",JSON.stringify(to_show));
+		console.log(to_show);
+
+	});
+
+	$(".collapse").on('hide.bs.collapse', function(){
+	    to_show.pop(this.id);
+	    localStorage.setItem("to_show",JSON.stringify(to_show));
+	    console.log(to_show);
+
+	});
+
+  $.each(to_show, function(index,value) {
+
+  	$("#"+value).collapse('show');
+  	to_show.pop(value);
+  	localStorage.setItem("to_show",JSON.stringify(to_show));
+  	console.log(to_show);
+
+
+
+  });
+
+
+
+
+
  var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {},
     $checkboxes = $("#checkbox-container :checkbox");
+
 
 $checkboxes.on("change", function(){
   $checkboxes.each(function(){
     checkboxValues[this.id] = this.checked;
   });
-  
   localStorage.setItem("checkboxValues", JSON.stringify(checkboxValues));
 });
+
 
 // On page load
 $.each(checkboxValues, function(key, value) {
@@ -1940,22 +2028,34 @@ $.each(checkboxValues, function(key, value) {
     return this.hostname != window.location.hostname;   })     .attr('target', '_blank');
 
 
-
-//  var shown = []
-//  $('.collapse').on('hidden', function() {
-// 	// remove from localStorage
-// 	shown.remove($(this).attr('swe'));
-// 	localStorage.setItem('shown', shown);
+// toggle to hide/show swe div
+// store date in localStore
+// iterate through dict in local store and show all divs
 
 
 
-//  }).on('shown', function() {
-//        // add to localStorage
-// 	shown.push($(this).attr('swe'));
-// 	localStorage.setItem('shown', shown);
+// start of shown array cache section
+ // hello = ["one", "two", "three"];
+ // localStorage.setItem("helloArray",hello)
+
+ // var shown = []
+ // $('.collapse').on('hidden', function() {
+	// // remove from localStorage
+	// shown.remove($(this).attr('swe'));
+	// localStorage.setItem('shown', JSON.stringify(shown));
 
 
-//  });
+
+ // }).on('shown', function() {
+ //       // add to localStorage
+	// shown.push($(this).attr('swe'));
+	// localStorage.setItem('shown', JSON.stringify(shown));
+
+ // });
+// end of shwon array cache section
+
+
+
 
 //   $(document).ready(function(){
 //   	var shown = localStorage.getItem('shown');
@@ -1969,10 +2069,7 @@ $.each(checkboxValues, function(key, value) {
 
 
 
-
-
 </script>
-
 
 
 
