@@ -27,6 +27,11 @@ a[aria-expanded='false'] > .expand_caret {
     /*background: linear-gradient(90deg,#fce3ec,#ffe8cc) !important;*/
   }
 
+  .title_info_spacing {
+    padding-bottom: 7%;
+
+  }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -270,13 +275,13 @@ input:focus + .small_slider {
 }
 
 input:checked + .small_slider:before {
-  -webkit-transform: translateX(15.5px);
-  -ms-transform: translateX(15.5px);
-  transform: translateX(15.5px);
+  -webkit-transform: translateX(17.51px);
+  -ms-transform: translateX(17.51px);
+  transform: translateX(17.51px);
 }
 
 .small_slider.round {
-  border-radius: 34px;
+  border-radius: 14px;
 }
 
 .small_slider.round:before {
