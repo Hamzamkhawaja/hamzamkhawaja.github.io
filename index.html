@@ -1930,7 +1930,7 @@ $('#firstCollapse').on('hidden.bs.collapse', function () {
 });
 
 
-var to_show =JSON.parse(localStorage.getItem('to_show')) || [];
+var to_show =JSON.parse(localStorage.getItem('to_show')) || ['apm','apm_tracker'];
 
 
 	$(".collapse").on('show.bs.collapse', function(){
@@ -1999,42 +1999,7 @@ $.each(checkboxValues, function(key, value) {
     return this.hostname != window.location.hostname;   })     .attr('target', '_blank');
 
 
-// toggle to hide/show swe div
-// store date in localStore
-// iterate through dict in local store and show all divs
 
-
-
-// start of shown array cache section
- // hello = ["one", "two", "three"];
- // localStorage.setItem("helloArray",hello)
-
- // var shown = []
- // $('.collapse').on('hidden', function() {
-	// // remove from localStorage
-	// shown.remove($(this).attr('swe'));
-	// localStorage.setItem('shown', JSON.stringify(shown));
-
-
-
- // }).on('shown', function() {
- //       // add to localStorage
-	// shown.push($(this).attr('swe'));
-	// localStorage.setItem('shown', JSON.stringify(shown));
-
- // });
-// end of shwon array cache section
-
-
-
-
-//   $(document).ready(function(){
-//   	var shown = localStorage.getItem('shown');
-// for (var s in shown) {
-//     $('#' + s).show(); // Or whatever API you use to un-collapse the div
-// }
- 
-//  });​
 
  
 
