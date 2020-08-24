@@ -115,7 +115,7 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
 
           Toggle 
           <label class="small_switch">
-            <input type="checkbox" id="">
+            <input type="checkbox" id="" checked>
             <span class="small_slider round"></span>
           </label>
 
@@ -134,24 +134,13 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
 
   <div class="row">
     <div class="col-md-3 col-md-offset-4 col-xs-offset-0 col-xs-12">
-    	<div class="col-md-8 col-xs-6">
+
     		<a data-toggle="collapse" data-target="#swe">
 			 	<h3>
 	        		SWE <sub><div class="footnote">software engineering</div></sub>
 	      		</h3>
-    		</a>
+    		</a> 
 
-    	</div>
-    	<div class="col-md-2 col-xs-6">
-    			    
-      	<a class="collapse" id="firstCollapse" data-toggle="collapse" data-target="#swe" aria-expanded="false">
-  			<div class="expand_caret caret"></div>
-		</a>
-
-      	<a id="linkId" data-toggle="collapse" data-target="#swe" aria-expanded="false">
-  			<div class="expand_caret caret"></div>
-		</a>
-    	</div>
 
     </div>
   </div>
@@ -271,15 +260,18 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
 
 
   <div class="row">
-    <div class="col-md-2 col-md-offset-4">
-      <h3>
-        APM <sub><div class="footnote">associate product manager</div></sub>
-      </h3>
-    </div>
-    <div class="col-md-1">
-    	<input checked class="switch collapse_icon" type="checkbox" id="101" data-target="#apm" data-toggle="collapse">
+    <div class="col-md-3 col-md-offset-4 col-xs-offset-0 col-xs-12">
+
+    		<a data-toggle="collapse" data-target="#apm">
+			 	<h3>
+	        		APM <sub><div class="footnote">associate product manager</div></sub>
+	      		</h3>
+    		</a> 
+
+
     </div>
   </div>
+
 
   <div id="apm" class="row collapse">
     <div class="col-md-4 col-md-offset-4">
@@ -406,15 +398,18 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
 
 
   <div class="row">
-    <div class="col-md-2 col-md-offset-4">
-      <h3>
-        AI/ML <sub><div class="footnote">machine learning</div></sub>
-      </h3>
-    </div>
-    <div class="col-md-1">
-    	<input class="switch collapse_icon" type="checkbox" id="102" value="off" data-target="#aiml" data-toggle="collapse">
+    <div class="col-md-3 col-md-offset-4 col-xs-offset-0 col-xs-12">
+
+    		<a data-toggle="collapse" data-target="#aiml">
+			 	<h3>
+	        		AI/ML <sub><div class="footnote">machine learning</div></sub>
+	      		</h3>
+    		</a> 
+
+
     </div>
   </div>
+
 
   <div id="aiml" class="row collapse">
     <div class="col-md-4 col-md-offset-4">
@@ -500,15 +495,17 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
 
 
   <div class="row">
-    <div class="col-md-2 col-md-offset-4">
-      <h3>
-        Startup PM <sub><div class="footnote">new grads only</div></sub>
-      </h3>
-    </div>
-   <div class="col-md-1">
-    	<input class="switch collapse_icon" type="checkbox" id="103" value="off" data-target="#startup" data-toggle="collapse">
+    <div class="col-md-3 col-md-offset-4 col-xs-offset-0 col-xs-12">
+
+    		<a data-toggle="collapse" data-target="#startup">
+			 	<h3>
+	        		Startup PM <sub><div class="footnote">new grads only</div></sub>
+	      		</h3>
+    		</a> 
+
     </div>
   </div>
+
 
   <div id="startup" class="row collapse">
     <div class="col-md-4 col-md-offset-4">
@@ -610,13 +607,15 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
 
   <div class="row">
     <div class="col-md-4 col-md-offset-4">
-      <h3>
-        SWE <sub><div class="footnote">software engineering</div></sub>
-      </h3>
+		<a data-toggle="collapse" data-target="#swe_tracker">
+	      <h3>
+	        SWE <sub><div class="footnote">software engineering</div></sub>
+	      </h3>
+  		</a>
     </div>
   </div>
 
-  <div class="row">
+  <div id="swe_tracker" class="row collapse">
     <div class="col-md-4 col-md-offset-4">
       <table class="table">
         <thead>
@@ -971,6 +970,9 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
     </div>
 
     <div class="col-md-2 col-md-offset-1">
+
+
+    	
      	<form>
 	      <div class="form-group">
 	        <label for="exampleFormControlInput1">Sign up if you want to be notified when the application opens.</label>
@@ -988,13 +990,15 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
 
     <div class="row">
 	    <div class="col-md-4 col-md-offset-4">
-	      <h3>
-	        APM <sub><div class="footnote">associate product manager</div></sub>
-	      </h3>
+			<a data-toggle="collapse" data-target="#apm_tracker"> 
+		      <h3>
+		        APM <sub><div class="footnote">associate product manager</div></sub>
+		      </h3>
+	  		</a>
 	  	</div>
   	</div>
 
-    <div class="row">
+    <div id="apm_tracker" class="row collapse">
     	<div class="col-md-4 col-md-offset-4">
 			<table class="table">
 			<thead>
@@ -1370,13 +1374,15 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
 
     <div class="row">
 	    <div class="col-md-4 col-md-offset-4">
-	      <h3>
-	        AI/ML <sub><div class="footnote">machine learning</div></sub>
-	      </h3>
+			<a data-toggle="collapse" data-target="#aiml_tracker"> 
+		      <h3>
+		        AI/ML <sub><div class="footnote">machine learning</div></sub>
+		      </h3>
+	  		</a>
 	  	</div>
   	</div>
 
-    <div class="row">
+    <div id="aiml_tracker" class="row collapse">
     	<div class="col-md-4 col-md-offset-4">
 			<table class="table">
 			<thead>
@@ -1638,13 +1644,15 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
 
     <div class="row">
 	    <div class="col-md-4 col-md-offset-4">
-	      <h3>
-	        Startup PM <sub><div class="footnote">new grads only</div></sub>
-	      </h3>
+			<a data-toggle="collapse" data-target="#startup_tracker"> 
+		      <h3>
+		        Startup PM <sub><div class="footnote">new grads only</div></sub>
+		      </h3>
+	  		</a>
 	  	</div>
   	</div>
 
-    <div class="row">
+    <div id="startup_tracker" class="row collapse">
     	<div class="col-md-4 col-md-offset-4">
 			<table class="table">
 			<thead>
@@ -1912,45 +1920,6 @@ https://www.sitepoint.com/quick-tip-persist-checkbox-checked-state-after-page-re
 <script type="text/javascript">
 
 
-    //  var openSectionsDict = JSON.parse(localStorage.getItem('openSectionsDict')) || {},
-    // $sections = $("#checkbox-container :swe");
-
-// $sections.on("change", function(){
-// 	$sections.each(function(){
-// 		openSectionsDict[this.id] = this.checked
-// 	});
-// 	localStorage.setItem("openSectionsDict", JSON.stringify(openSectionsDict));
-// });
-
-
-// // On page load
-// $.each(openSectionsDict, function(key, value) {
-//   $("#" + key).prop('checked', value);
-// });
-
-
-
-
-
-
-// function hideSwe() {
-// 	alert("hideSwe() was triggered on link click");
-// 	var element = document.getElementById("swe");
-//   	element.classList.toggle("hider");
-
-// }
-
-// $( "#linkId" ).click(function() {
-
-// });
-
-// $('#firstCollapse').collapse({
-// 	$("dialogue").dialogue();
-// 	alert("I hate this");
-// 	console.log("got to jquery collapse");
-
-// });
-
 $('#firstCollapse').on('hidden.bs.collapse', function () {
   // do something…
   alert("I got to the longer one");
@@ -1981,7 +1950,6 @@ var to_show =JSON.parse(localStorage.getItem('to_show')) || [];
   	to_show.pop(value);
   	localStorage.setItem("to_show",JSON.stringify(to_show));
   	console.log(to_show);
-
 
 
   });
